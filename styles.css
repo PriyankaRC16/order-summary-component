@@ -80,6 +80,7 @@
     align-items: flex-start;
     gap: 140px;
     border-radius: 4px;
+    width: 290px;
     background: hsl(225, 100%, 98%);
 }
 

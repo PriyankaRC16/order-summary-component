@@ -2,43 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  
   <title>Frontend Mentor | Order summary card</title>
 
 </head>
 <body>
-  <div class="body-card">
-  <img src="images/pattern-background-desktop.svg" style=" width: 2000px; height: 300px; margin-top:-200px;">
-<div class="main-card">
-  <div class="illustration"><img src="images/illustration-hero.svg" alt="no image" class="center"></div>
+  <main>
+    <picture>
+      <source srcset="images/pattern-background-desktop.svg" media="(min-width: 40rem)">
+      <img src="images/pattern-background-mobile.svg" alt= "This is a wave background">
+    </picture>
+  <div class="card-content">
+    <img src="images/illustration-hero.svg" alt="This is a girl enjoying music" class="illustration center">
+
   <div class="text-background">
-    <div class="title">Order Summary</div>
-    <div class="paragraph">You can now listen to millions of songs,</div>
-    <div class="paragraph">audiobooks, and podcasts on any device</div>
-    <div class="paragraph">anywhere you like!</div>
+    <h1 class="title">Order Summary</h1>
+    <p class="paragraph">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+  </div>
     <div class ="card">
       <div class="text-and-icon-background">
-        <div class = "icon"><img src="images/icon-music.svg" alt="no image"></div>
+        <img src="images/icon-music.svg" class="icon">
         <div class="card-text-background">
-          <div class="card-title-text">Annual Plan</div>
-          <div class="card-paragraph-text">$ 59.99/year</div>
+          <h2 class="card-title-text">Annual Plan</h2>
+          <p class="card-paragraph-text">$ 59.99/year</p>
         </div>
-        <div class = "link link-text">Change</div>
+        <a href="#">Change</a>
       </div>
     </div>
-  </div>
  
-  <button type="button" class="button primary-button-text">Proceed to Payment</button>
+  <button class = "primary-button-text">Proceed to Payment</button>
   <div class="secondary-button secondary-button-text">Cancel Order</div>
+</div>
 
-</div>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Priyanka Roy Choudhury</a>.
-  </div>
-</div>
+    Coded by Priyanka Roy Choudhury.
+  </footer>
+</main>
 </body>
 </html>

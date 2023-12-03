@@ -84,6 +84,13 @@ picture {
   margin-bottom: 1.25rem;
 }
 
+.card__illustration {
+  width: 100%;
+  max-width: 100%; 
+  height: auto;
+  display: block;
+}
+
 .text-background {
   display: flex;
   flex-direction: column;
